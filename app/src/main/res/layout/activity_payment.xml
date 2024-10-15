@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/pyment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lora"
+            android:text="Checkout"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+        <TextView
+            android:id="@+id/shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyment"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lora"
+            android:text="Shipping address"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopping"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lora"
+            android:text="4517 Washington Ave. Manchester, \nKentucky 39495 \n\n(405) 555-0128"
+            android:textColor="#626565"
+            android:textSize="16dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="15dp">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/mastercard"
+        android:src="@drawable/oo"
+        android:layout_marginStart="60dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/paybal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pp" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/paybal"
+        android:layout_marginStart="57dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/aa"
+        android:id="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/crditcard"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/card"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_height="200dp">
+    </ImageView>
+    <ImageView
+        android:id="@+id/repimg"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"/>
+        <TextView
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repimg"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lora"
+            android:text="Order:"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repimg"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lora"
+            android:text="$370"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <TextView
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lora"
+            android:text="Delivery Fees                                                         Free"
+            android:textColor="#626565"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/crditcard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#78F208"
+            android:textColor="@color/black"
+            android:text="Pay now"
+            android:textSize="20dp"
+            app:cornerRadius="1dp" />
+    </RelativeLayout>
+</ScrollView>

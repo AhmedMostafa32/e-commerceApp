@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg2"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/blck" />
+
+    <ImageView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+    <ImageView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt2"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22px" />
+
+    <EditText
+        android:layout_below="@id/emill"
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="Enter UserName"
+        android:textColorHint="#E0E4E4"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <EditText
+        android:layout_below="@id/name"
+        android:layout_marginTop="15dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:textColorHint="#E0E4E4"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/emill"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:hint="Enter Email"
+        android:textColor="@color/white"
+        android:textColorHint="#E0E4E4"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#78F208"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Continue"
+        app:cornerRadius="8dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/signuptxt"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#00FFFFFF"
+        app:cornerRadius="5dp" />
+</RelativeLayout>
